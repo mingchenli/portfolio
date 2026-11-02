@@ -51,3 +51,4 @@ Cloudflare Pages / Netlify: point at the repo, no build command, output director
 - Fonts: uses system fonts on purpose. To use JetBrains Mono / Inter, download the `.woff2` files into `assets/fonts/` and add `@font-face` rules. Don't link Google Fonts, that's a third-party request.
 - Keyboard: `1`–`6` jump to sections; edit `order` in `main.js` if you add sections.
 - Motion: the name scramble and cursor turn off for visitors with `prefers-reduced-motion`.
+- Deploy: GitHub Pages builds from `main` (root). Any push to `main` republishes the site.
