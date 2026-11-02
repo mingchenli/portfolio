@@ -52,3 +52,4 @@ Cloudflare Pages / Netlify: point at the repo, no build command, output director
 - Keyboard: `1`–`5` jump to sections; edit `order` in `main.js` if you add sections.
 - Motion: the name scramble and cursor turn off for visitors with `prefers-reduced-motion`.
 - Deploy: GitHub Pages builds from `main` (root). Any push to `main` republishes the site.
+- Caching: after editing a file in `assets/`, bump the `?v=` tag in `index.html` so browsers fetch the new copy right away.
