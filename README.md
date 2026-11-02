@@ -1,5 +1,7 @@
 # Cipher terminal portfolio
 
+Live site: https://mingchenli.github.io/portfolio/
+
 A static, zero-dependency personal site for a privacy engineer. No build step, no frameworks, no fonts or scripts from third parties, so the "0 trackers" footer is actually true.
 
 ```
