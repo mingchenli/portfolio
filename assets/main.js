@@ -102,11 +102,6 @@
   $("edu-list").append(...S.education.map((e) =>
     el("li", {}, el("span", { class: "deg" }, e.degree), el("span", { class: "sch" }, e.school + " · " + e.year))));
 
-  // Contact
-  const rows = [["email", el("a", { href: "mailto:" + addr }, addr)],
-    ...S.contact.links.map((l) => [l.label.toLowerCase(), el("a", ext(l.url), l.url.replace(/^https?:\/\/(www\.)?/, "").replace(/[?#].*$/, ""))])];
-  $("contact-grid").append(...rows.map(([k, v]) => el("div", {}, el("dt", {}, k), el("dd", {}, v))));
-
   // Opening a case from a link (focus cards, #CASE-xxx) expands it
   function openFromHash() {
     const d = location.hash && document.getElementById(location.hash.slice(1));
@@ -115,8 +110,8 @@
   window.addEventListener("hashchange", openFromHash);
   openFromHash();
 
-  // Keyboard: 1–6 jump to sections (ignored while typing or with modifiers)
-  const order = ["about", "focus", "cases", "log", "stack", "contact"];
+  // Keyboard: 1–5 jump to sections (ignored while typing or with modifiers)
+  const order = ["about", "focus", "cases", "log", "stack"];
   document.addEventListener("keydown", (e) => {
     if (e.metaKey || e.ctrlKey || e.altKey || /input|textarea/i.test(e.target.tagName)) return;
     const n = parseInt(e.key, 10);

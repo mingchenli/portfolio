@@ -10,7 +10,7 @@ window.SITE = {
   focus: ["privacy-preserving ML", "trustworthy AI", "secure systems"],
   fingerprint: "",                                 // optional, e.g. "PGP 9F2C 41B7 E0A3 ..."
   location: "",                                    // optional, e.g. "San Francisco, CA"
-  status: "Open to privacy engineering roles",
+  status: "Open to privacy engineer, applied scientist, machine learning engineer, and software development engineer roles",
 
   about: [
     "Privacy engineer with over 8 years of experience designing systems that protect personal data, identifying privacy and security risks, and applying Privacy by Design from data collection to deployment.",

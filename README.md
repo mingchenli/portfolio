@@ -49,6 +49,6 @@ Cloudflare Pages / Netlify: point at the repo, no build command, output director
 
 - Colors: CSS variables at the top of `style.css` (`--teal` is the accent, `--amber` marks active/confidential).
 - Fonts: uses system fonts on purpose. To use JetBrains Mono / Inter, download the `.woff2` files into `assets/fonts/` and add `@font-face` rules. Don't link Google Fonts, that's a third-party request.
-- Keyboard: `1`–`6` jump to sections; edit `order` in `main.js` if you add sections.
+- Keyboard: `1`–`5` jump to sections; edit `order` in `main.js` if you add sections.
 - Motion: the name scramble and cursor turn off for visitors with `prefers-reduced-motion`.
 - Deploy: GitHub Pages builds from `main` (root). Any push to `main` republishes the site.
